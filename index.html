@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,7 +36,7 @@
                         </li>
                     </ul>
                     <ul class="top-header__list">
-                        <li class="top-header__list-item">
+                        <li class="top-header__list-item top-header__list-item--notify">
                             <a>
                                 <i class="header__nav-icon fas fa-bell"></i>
                                 Thông Báo
@@ -83,6 +83,56 @@
         </header>
         <div class="container">Fist commit</div>
         <footer class="footer"></footer>
+    </div>
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <div class="modal__inner">
+                <!-- Authen form -->
+                <div class="Auth-form">
+                    <div class="Auth-form__header">
+                        <h3 class="Auth-form__heading">Đăng ký</h3>
+                        <span class="Auth-form__switch-btn">Đăng nhập</span>
+                    </div>
+                    <div class="Auth-form__body">
+                        <div class="Auth-form__group">
+                            <input type="text" class="Auth-form__input" placeholder="Enter your mail">
+                        </div>
+                        <div class="Auth-form__group">
+                            <input type="password" class="Auth-form__input" placeholder="Enter your password">
+                        </div>
+                        <div class="Auth-form__group">
+                            <input type="password" class="Auth-form__input" placeholder="re-enter password">
+                        </div>
+                    </div>
+                    <div class="Auth-form__aside">
+                        <p class="Auth-form__policy-text">
+                            Bằng việc đăng kí, bạn đã đồng ý với Shopee về 
+                            <a href="" class="Auth-form__policy-link">Điều khoản dịch vụ</a>&
+                            <a href="" class="Auth-form__policy-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+                    <div class="Auth-form__control">
+                        <button class="btn">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG KÝ</button>
+                    </div>
+                    <div class="Auth-form__social">
+                        <i class="fab fa-facebook-square"></i>
+                        <a href="" class="btn btn--with-icon">
+                            Kết nối với facebook
+                        </a>
+                        <i class="fab fa-google-plus-g"></i>
+                    </div>
+                    <div class="Auth-form__social">
+                        <i class="fab fa-google-plus-g"></i>
+                        <a href="" class="btn btn--with-icon">
+                            Kết nối với facebook
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
