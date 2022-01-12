@@ -86,7 +86,17 @@
                     </div>
                    
                     <div class="search-box">
-                        <input type="text" class="search-box__input" placeholder="Nhập tên sản phẩm, thương hiệu và tên Shop">
+                        <div class="search-box__wrap">
+                            <input type="text" class="search-box__input" placeholder="Nhập tên sản phẩm, thương hiệu và tên Shop">
+                            <!-- History -->
+                            <div class="search-box__history">
+                                <h3 class="search-box__history-title">Lịch sử tìm kiếm</h3>
+                                <ul class="search-box__history-list">
+                                    <li class="search-box__history-item"><a href="">Kem dưỡng da</a></li>
+                                    <li class="search-box__history-item"><a href="">Kem trị mụn</a></li>
+                                </ul>
+                            </div>
+                        </div>
                         <div class="search-box__select">
                             <span class="search-box__select-label">Trong Shop</span>
                             <i class="fas fa-angle-down"></i>
@@ -107,7 +117,13 @@
                     </div>
                     
                     <div class="header__cart">
-                        <i class="fas fa-shopping-cart header__cart-icon"></i>
+                        <div class="header__cart-wrap">
+                            <i class="fas fa-shopping-cart header__cart-icon"></i>
+                            <div class="cart__list  cart__list--no-cart">
+                                <img src="./assets/img/no-cart.png" alt="" class="cart__img--no-cart">
+                                <span>Chưa có sản phẩm</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>  
