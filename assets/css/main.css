@@ -493,7 +493,15 @@
     animation: fadein ease-in 1s;
     cursor: default;
 }
-
+.cart__list::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 70px;
+    height: 30px;
+}
 .cart__list::after{
     position: absolute;
     content: "";
@@ -505,7 +513,7 @@
     cursor: pointer;
 }
 .cart__list--no-cart .cart__img--no-cart,
-.cart__list--no-cart .cart__list span
+.cart__list--no-cart .cart__list-no-product
 { 
     margin-left: auto;
     margin-right: auto;
@@ -516,7 +524,7 @@
     padding: 24px 0;
     display: none;
 }
-.cart__list span{
+.cart__list-no-product{
     display: none;
     font-size: 1.4rem;
     margin: 12px 0;
@@ -532,4 +540,84 @@
     color: var(--primary-color);
     border: 2px solid #ee4d2d;
 }
+/* CART ITEM */
+.cart__list-heading{
+    margin: 12px 8px;
+    font-size: 1.4rem;
+    color: #999;
+    font-weight: 500;
+}
+.cart__list-item{
+    padding-left: 0;
+    list-style-type: none;
+}
+.cart__list-product{
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+.cart__list-product:hover{
+    background-color: #f8f8f8;
+}
+.cart__list-product-img{
+    width: 42px;
+    margin: 12px;
+    border: 1px solid #e8e8e8;
+}
+.cart__list-product-info{
+    width: 100%;
+}
+.cart__list-product-head{
+    display: flex;
+    align-items: center;
+    margin-right:12px;
+}
+.cart__list-product-name{
+    flex: 1;
+    text-align: left;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin: 12px 5px;
+}
+.cart__list-product-price{
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+.cart__list-product-multi,
+.cart__list-product-quantity{
+    color: #757575;
+}
+.cart__list-product-multi{
+    margin: 0 5px;
+}
+.cart__list-product-quantity{
+    font-size: 1rem;
+}
+.cart__list-product-body{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.cart__list-product-remove{
+    padding: 1px 3px;
+    background: #f5f5f5;
+    border: 1px solid #000;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.cart__list-product-remove:hover{
+    color: var(--primary-color);
+}
+.cart__list-product-description{
+}
 
+.btn--view-cart{
+    float: right;
+    margin: 0 8px 8px 0;
+}
+.btn--view-cart:hover{
+    background: #f05d41;
+}
