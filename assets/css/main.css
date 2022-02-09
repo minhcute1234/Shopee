@@ -710,3 +710,137 @@
 .btn--view-cart:hover{
     background: #f05d41;
 }
+
+/* shop page information */
+.shop-page__info{
+    background-color: #fff;
+    padding: 1.25rem 0;
+    display: flex;
+    height: 11.275rem;
+    overflow: hidden;
+}
+
+.section-seller-overview{
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+    height: 10.375rem;
+}
+
+.seller-overview__leading{
+    position: relative;
+    width: 24.375rem;
+    overflow: hidden;
+    border-radius: 0.25rem;
+}
+.seller-overview__leading-background{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(https://giaygiare.vn/upload/images/top-10-mau-giay-sneaker-duoc-yeu-thich-nhat-nam-2020.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    margin: -4px;
+}
+.seller-overview__leading-background-mark{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.6);
+}
+.seller-overview__leading-content{
+    position: absolute;
+    top: 0.625rem;
+    left: 1.25rem;
+    right: 0.625rem;
+    bottom: 0.625rem;
+}
+.seller-overview__seller-portrait{
+    display: flex;
+}
+.seller-overview__seller-portrait-get-link
+{
+    position: relative;
+    height: 5rem;
+    width: 5rem;
+    display: block;
+    flex-shrink: 0;
+}
+.seller-overview__seller-portrait-img{
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding: 2px;
+    width: 50px;
+}
+.seller-overview__seller-portrait-img:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);  
+}
+.seller-overview__seller-portrait-info{
+    margin-left: 10px;
+    color: var(--white-color);
+}
+.seller-overview__seller-portrait-name{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 6px 0;
+}
+.seller-overview__seller-portrait-decristion{
+    font-size: 1rem;
+}
+.seller-overview__leading-button-link{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+.seller-overview__leading-button{
+    position: absolute;
+    bottom: 0;
+    left: -5px;
+    width: 100%;
+    padding: 5px;
+}
+.seller-overview__leading-btn{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    color: var(--white-color);
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    background: none;
+    border: 1px solid #fff;
+    font-weight: 400;
+    cursor: pointer;
+}
+.add-icon{
+    margin-right: 5px;
+}
+.seller-overview__leading-button p{
+    margin: 0;
+}
+
+.seller-overview__info-list{
+    flex: 1;
+    display: flex;
+    padding-left: 1.875rem;
+    padding-top: 0.625rem;
+    background-color: #fff;
+    align-items: flex-start;
+    flex-flow: column wrap;
+}
+.section-seller-overview__item{
+    margin: 5px 0;
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+.section-seller-overview__item i{
+    margin: 0 6px;
+}   
+.section-seller-overview__item span:last-child{
+    color: red;
+}
