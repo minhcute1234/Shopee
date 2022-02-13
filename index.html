@@ -314,7 +314,7 @@
         <!-- container -->
         <div class="container">
             <div class="grid">
-                <div class="grid__row">   
+                <div class="grid__row app__content">   
                     <div class="grid__column-2">
                         <nav class="category">
                             <h3 class="category-heading">
@@ -334,7 +334,46 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="grid__column-8"></div>
+                    <div class="grid__column-10">
+                        <div class="home-filter">
+                            <span class="home-filter__label">Sắp xếp theo</span>
+                            <div class="home-filter__option">
+                                <button class="btn home-filter__option-item">Phổ biến</button>
+                                <button class="btn btn--primary home-filter__option-item">Mới nhất</button>
+                                <button class="btn home-filter__option-item">Bán Chạy</button>
+    
+                                <div class="select-input">
+                                    <span class="select-input__label">
+                                        Giá
+                                    </span>
+                                    <i class="fas fa-angle-down"></i>
+                                    <ul class="select-input__list">
+                                        <li class="select-input__item">
+                                           <a class="select-input__item-link" href="#">Giá : Thấp đến Cao</a> 
+                                        </li>
+                                        <li class="select-input__item">
+                                            <a class="select-input__item-link" href="#">Giá : Cao đến Thấp</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="home-filter__paginate">
+                                <span class="home-filter__page-num">
+                                    <span class="home-filter__page-current">1</span>
+                                    /
+                                    14
+                                </span>
+                                <div class="home-filter__page-control">
+                                    <a href="#" class="page-control__btn">
+                                        <i class="fas fa-angle-left"></i>
+                                    </a>
+                                    <a href="#" class="page-control__btn page-control__btn--disable">
+                                        <i class="fas fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>    
