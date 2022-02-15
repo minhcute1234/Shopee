@@ -132,3 +132,31 @@ html{
     margin-right: auto;
     width: 100%;
 }
+.pagination{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+.pagination__item{
+    display: block;
+    margin: 0 20px;
+}
+.pagination__link{
+    display: block;
+    color: #939393;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 10px 12px;
+    border-radius: 2px;
+
+}
+.pagination__item--active a{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+.pagination__item--active:hover{
+    color: var(--white-color);
+    filter:brightness(0.9);
+}
