@@ -1494,6 +1494,7 @@ i.home-product-item__action-like--icon-fill{
         margin-bottom: 10px;
     }
     .country-area__title{
-        flex-flow:row wrap;
+        width:100%;
+        justify-content: center;
     }
 }
